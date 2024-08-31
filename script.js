@@ -58,9 +58,10 @@ async function getSongs(folder){
     })
 }
 
-async function displayAlbums(baseUrl = `http://192.168.18.46:3000/sigma web dev/Spotify Clone/songs/`) {
-    // Build folderPath carefully to avoid duplicating "songs"
-    // folderPath = currentFolder ? `${baseUrl}/${currentFolder}` : baseUrl;
+async function displayAlbums(baseUrl = `http://127.0.0.1:3000/songs/`) {
+    // Replace the baseUrl with your local server's URL up to the 'songs' folder.
+    // For example, if your local server is running on 'http://localhost:8000/' 
+    // and your 'songs' folder is in the root directory, use: `http://localhost:8000/songs/`
     folderPath = baseUrl;
     console.log("Constructed folderPath:", folderPath);  // Debugging
 
@@ -77,7 +78,7 @@ async function displayAlbums(baseUrl = `http://192.168.18.46:3000/sigma web dev/
         let href = anchor.href;
         console.log(href);
         
-        let folderName = href.split("/Spotify%20Clone/")[1];
+        let folderName = href.split("/songs/")[1];
         if(anchor.href.includes("/songs")){
             let folder = anchor.href.split("/").slice(-2)[0];
             //get the metadata of the folder
