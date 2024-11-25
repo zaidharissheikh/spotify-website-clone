@@ -46,3 +46,6 @@ The goal of this project was to:
 
 # 📝 License
 This project is licensed under the Apache 2.0 License. See the LICENSE file for details.
+
+![spotify-3](https://github.com/user-attachments/assets/9b2a56ba-0b29-4368-a418-e508e2670ae7)
+![spotify-1](https://github.com/user-attachments/assets/31e46f9d-a8be-480f-b426-7bdf828ba81a)
